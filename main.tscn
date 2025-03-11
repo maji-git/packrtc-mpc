@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfb3her4ba3nf"]
+
+[ext_resource type="Script" path="res://addons/MultiplayCore/MultiPlay.gd" id="1_00ssh"]
+[ext_resource type="Script" path="res://mpc-addons/packrtc-mpc/PackRTCProtocol.gd" id="2_51oha"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MultiPlayCore" type="Node" parent="."]
+script = ExtResource("1_00ssh")
+max_players = 4
+
+[node name="PackRTCProtocol" type="Node" parent="MultiPlayCore"]
+script = ExtResource("2_51oha")
